@@ -1,6 +1,13 @@
 "use strict";
 
 class Game {
+  static statuses = {
+    IDLE: "idle",
+    PLAYING: "playing",
+    WIN: "win",
+    LOSE: "lose",
+  };
+
   constructor(
     initialState = [
       [0, 0, 0, 0],
